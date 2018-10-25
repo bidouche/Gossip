@@ -17,3 +17,7 @@ end
 20.times do
 Comment.create!(content: Faker::Lorem.sentence, user_id: rand(1..10), gossiptable_id: rand(1..20))
 end
+
+100.times do
+Private_Message.create!(content: Faker::Lorem.sentence, recipient_id: rand(1..10),sender_id: rand(1..10))
+end
