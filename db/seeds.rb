@@ -13,3 +13,7 @@ end
 10.times do
 Tag.create!(title: Faker::Dessert.variety, user_id: rand(1..10), gossiptable_id: rand(1..20))
 end
+
+20.times do
+Comment.create!(content: Faker::Lorem.sentence, user_id: rand(1..10), gossiptable_id: rand(1..20))
+end
